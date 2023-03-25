@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Boot animation
-TARGET_BOOTANIMATION_SIZE := 1080
+ARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
 
@@ -57,6 +57,11 @@ PRODUCT_PACKAGES += \
     init.device.rc \
     init.macaddress_setup.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    removepackages
+
+
 # Screen density
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -74,8 +79,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
 # Tablet Specific
-PRODUCT_PACKAGES += \
-    androidx.window.extensions
+#PRODUCT_PACKAGES += \
+#    androidx.window.extensions
 
 # Task profiles
 PRODUCT_COPY_FILES += \
