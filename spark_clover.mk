@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common spark stuff
-$(call inherit-product, vendor/spark/config/common.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/clover/device.mk)
