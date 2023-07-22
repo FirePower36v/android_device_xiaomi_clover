@@ -21,7 +21,7 @@
 # definition file).
 #
 
-# inherit MI PAD 4 derpOS device config
+# inherit MI PAD 4 DerpFest device config
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_clover.mk
 
