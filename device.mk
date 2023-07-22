@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     init.device.rc \
     init.macaddress_setup.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    removepackages
+
 # Screen density
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
