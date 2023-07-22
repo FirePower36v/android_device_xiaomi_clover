@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI PAD 4 ArrowOS device config
+# inherit MI PAD 4 derpOS device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_clover.mk
+    $(LOCAL_DIR)/derp_clover.mk
 
 COMMON_LUNCH_CHOICES := \
-		arrow_clover-eng \
-		arrow_clover-userdebug \
-		arrow_clover-user
+		derp_clover-eng \
+		derp_clover-userdebug \
+		derp_clover-user
