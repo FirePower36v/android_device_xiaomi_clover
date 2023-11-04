@@ -42,4 +42,7 @@ patchelf --replace-needed libstdc++.so libstdc++_vendor.so "$DEVICE_BLOB_ROOT"/v
 patchelf --replace-needed libstdc++.so libstdc++_vendor.so "$DEVICE_BLOB_ROOT"/vendor/lib/libtrueportrait.so
 patchelf --replace-needed libstdc++.so libstdc++_vendor.so "$DEVICE_BLOB_ROOT"/vendor/lib/libubifocus.so
 
+patchelf --remove-needed libhidltransport.so "$DEVICE_BLOB_ROOT"/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+patchelf --replace-needed libhidlbase.so libhidlbase-v32.so "$DEVICE_BLOB_ROOT"/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
