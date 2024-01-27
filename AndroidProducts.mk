@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI PAD 4 AOSP device config
+# inherit MI PAD 4 DerpFest device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_clover.mk
+    $(LOCAL_DIR)/derp_clover.mk
 
 COMMON_LUNCH_CHOICES := \
-		aosp_clover-eng \
-		aosp_clover-userdebug \
-		aosp_clover-user
+		derp_clover-eng \
+		derp_clover-userdebug \
+		derp_clover-user
