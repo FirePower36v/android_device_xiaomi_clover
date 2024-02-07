@@ -22,7 +22,10 @@ $(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
 
 # Density
-TARGET_SCREEN_DENSITY := 320
+TARGET_SCREEN_DENSITY := 322
+
+#Google Apps selection
+TARGET_USES_PICO_GAPPS := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := clover_defconfig
