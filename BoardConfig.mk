@@ -18,9 +18,6 @@ MALLOC_SVELTE_FOR_LIBC32 := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 $(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
-
 # Density
 TARGET_SCREEN_DENSITY := 322
 
