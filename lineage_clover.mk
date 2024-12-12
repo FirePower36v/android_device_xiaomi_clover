@@ -31,6 +31,8 @@ $(call inherit-product, device/xiaomi/clover/device.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="clover-user 8.1.0 OPM1.171019.019 9.7.4 release-keys" \
     BuildFingerprint=xiaomi/clover/clover:8.1.0/OPM1.171019.019/9.7.4/release-keys \
+    RisingChipset="Snapdragon 660" \
+    RisingMaintainer="Viviano" \
     DeviceProduct=clover
 
 # Device identifier
@@ -40,3 +42,10 @@ PRODUCT_NAME := lineage_clover
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_DEVICE := clover
 PRODUCT_MODEL := MI PAD 4
+
+# RisingOS
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+WITH_GMS :=  false
+TARGET_CORE_GMS := false
