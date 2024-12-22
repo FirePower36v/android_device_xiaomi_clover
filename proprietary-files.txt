@@ -46,7 +46,6 @@ vendor/etc/camera/s5k5e8_chromatix.xml
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/lib/libqomx_core.so
 vendor/lib/libarcsoft_high_dynamic_range.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
@@ -129,7 +128,6 @@ vendor/lib/libseemore.so
 -vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libvideobokeh.so
 vendor/lib/libvideoutils.so
-vendor/lib64/libcdsprpc.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
