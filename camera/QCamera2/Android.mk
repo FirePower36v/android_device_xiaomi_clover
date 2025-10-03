@@ -161,16 +161,12 @@ LOCAL_HEADER_LIBRARIES += libcutils_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 LOCAL_HEADER_LIBRARIES += display_headers
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 #HAL 1.0 Include paths
 LOCAL_C_INCLUDES += \
         $(call project-path-for,qcom-camera)/QCamera2/HAL
 
-ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/media
-LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
-endif
 ifeq ($(TARGET_TS_MAKEUP),true)
 LOCAL_CFLAGS += -DTARGET_TS_MAKEUP
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/HAL/tsMakeuplib/include
