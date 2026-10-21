@@ -68,7 +68,7 @@ PRODUCT_PACKAGES += \
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    removepackages
+    RemovePackages
 
 # Screen density
 PRODUCT_AAPT_CONFIG := large
